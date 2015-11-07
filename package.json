@@ -1,0 +1,35 @@
+{
+  "name": "twttr-pulse",
+  "version": "1.0.0",
+  "description": "Explore the real-time insights of Twitter",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "edravis/pulse"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "twitter": "^1.2.5"
+  },
+  "devDependencies": {
+    "dev-documentation": "^2.1.0-alpha1",
+    "documentation": "^3.0.3",
+    "istanbul": "^0.4.0",
+    "istanbul-cobertura-badger": "^1.1.0",
+    "snazzy": "^2.0.1",
+    "standard": "^5.3.1",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "standard": "node_modules/.bin/standard --verbose | node_modules/.bin/snazzy",
+    "pretest": "npm run-script standard",
+    "test": "node_modules/.bin/istanbul cover --report cobertura ./test/**.js | node_modules/.bin/tap-spec",
+    "posttest": "npm run-script docs",
+    "docs": "node_modules/.bin/documentation index.js -o docs -f html",
+    "dev-docs": "node_modules/.bin/dev-documentation"
+  },
+  "author": "Rubén Sospedra",
+  "license": "MIT"
+}

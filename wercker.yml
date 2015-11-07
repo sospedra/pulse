@@ -1,0 +1,6 @@
+box: nodesource/precise:4.2.1
+
+build:
+  steps:
+    - npm-install
+    - npm-test
