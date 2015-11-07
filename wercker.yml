@@ -1,4 +1,4 @@
-box: wercker/node:4.2.1
+box: wercker/node
 
 build:
   steps:
