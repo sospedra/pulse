@@ -1,4 +1,4 @@
-box: nodesource/precise:4.2.1
+box: node:4.2.1
 
 build:
   steps:
