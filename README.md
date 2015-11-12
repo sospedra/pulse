@@ -5,7 +5,7 @@
 ![dependencies](https://david-dm.org/edravis/pulse.svg)
 [![wercker status](https://app.wercker.com/status/25e741c3ed25394fc2aaf15fbe8e4558/s/master "wercker status")](https://app.wercker.com/project/bykey/25e741c3ed25394fc2aaf15fbe8e4558)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-![istanbul-cobertura-coverage](https://cdn.rawgit.com/edravis/pulse/master/coverage.svg)
+![badgifier-istanbul-cobertura](https://img.shields.io/badge/coverage-82.14-green.svg)
 
 ## Install
 Giving the experimental nature of this repo is recommended to don't install it using `npm` becuase it's possible that you run with an outdated version.
@@ -30,9 +30,9 @@ I'm currently using this repo as lab for experiment with the meta configuration 
 - [x] Unit testing
 - [x] Automatic documentation
 - [x] Code coverage
-- [x] Badges
+- [x] Badgifier
 - [x] Coding standard
-- [ ] Continous integration
+- [x] Continous integration
 - [ ] Commitizen
 - [ ] Pre-commit hooks
 - [ ] Automatic changelog

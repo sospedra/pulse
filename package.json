@@ -12,10 +12,10 @@
     "twitter": "^1.2.5"
   },
   "devDependencies": {
+    "badgifier": "^0.1.5",
     "dev-documentation": "^2.1.0-alpha1",
     "documentation": "^3.0.3",
     "istanbul": "^0.4.0",
-    "istanbul-cobertura-badger": "^1.1.0",
     "snazzy": "^2.0.1",
     "standard": "^5.3.1",
     "tap-spec": "^4.1.0",
@@ -25,7 +25,7 @@
     "start": "node index.js",
     "standard": "node_modules/.bin/standard --verbose | node_modules/.bin/snazzy",
     "pretest": "npm run-script standard",
-    "test": "node_modules/.bin/istanbul cover --report cobertura ./test/**.js | node_modules/.bin/tap-spec",
+    "test": "node_modules/.bin/istanbul cover --report cobertura ./test/**.js | node_modules/.bin/tap-spec && ./node_modules/.bin/badgifier -o README.md",
     "posttest": "npm run-script docs",
     "docs": "node_modules/.bin/documentation index.js -o docs -f html",
     "dev-docs": "node_modules/.bin/dev-documentation"
